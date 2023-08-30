@@ -33,18 +33,37 @@ $lightBlue: #8CABFF;
     justify-content: center;
     flex-direction: column;
 }
+.divImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
 
-.infoInicio .msgInicio{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 400px;
-    padding-top: 60px;
-    font-size: 25px;
+
+.msgInicio {
+  color: white;
+  font-family: 'Phudu', cursive;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 20px;
+  
+  /* Adicione estas propriedades para centralização */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Para alinhar o texto no centro horizontal */
+  height: 100%; /* Preenche a altura da div */
 }
 
 .wrapper{
     display: flex;
     justify-content: center;
+}
+
+.simbol{
+  height: 500px;
 }
 
 a{

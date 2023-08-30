@@ -5,6 +5,7 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { CardModule } from 'primeng/card';
 import { MenubarModule } from 'primeng/menubar';
 import { GalleriaModule } from 'primeng/galleria';
+import { SkeletonModule } from 'primeng/skeleton';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import {ButtonModule} from 'primeng/button';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { StartComponent } from './components/start/start.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { StartComponent } from './components/start/start.component';
     HeaderComponent,
     FooterComponent,
     StartComponent,
+    AboutComponent,
   
   ],
   imports: [
@@ -30,7 +33,8 @@ import { StartComponent } from './components/start/start.component';
     AppRoutingModule,
     CardModule,
     MenubarModule,
-    GalleriaModule
+    GalleriaModule,
+    SkeletonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
