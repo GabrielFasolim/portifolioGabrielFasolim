@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;700&display=swap');
 
 $darkPurple: #35155D;
 $lightPurple: #512B81;
@@ -19,6 +19,8 @@ $lightBlue: #8CABFF;
 
 .boxInicial .title{
     font-family: 'Phudu', cursive;
+    font-weight: 700;
+    letter-spacing: 0.09cm;
     color: white;
     font-size: 70px;
     margin: 0;
@@ -36,7 +38,8 @@ $lightBlue: #8CABFF;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-bottom: 400px;
-    padding-top: 100px;
+    padding-top: 60px;
+    font-size: 25px;
 }
 
 .wrapper{
