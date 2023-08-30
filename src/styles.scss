@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+// Reset básico
+html,
+body,
+div,
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+pre,
+a,
+abbr, acronym,
+address,
+big,
+cite,
+del, ins,
+em, strong,
+dfn,
+font,
+img,
+kbd,
+q,
+s, strike,
+samp,
+small,
+sub, sup,
+tt,
+var,
+b, u,
+i,
+center,
+dl, dt, dd,
+ol, ul, li,
+fieldset, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Seu estilo personalizado começa aqui
+$darkPurple: #35155D;
+$lightPurple: #512B81;
+$darkBlue: #4477CE;
+$lightBlue: #8CABFF;
