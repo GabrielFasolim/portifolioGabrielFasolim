@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;700&display=swap');
+
+$darkPurple: #35155D;
+$lightPurple: #512B81;
+$darkBlue: #4477CE;
+$lightBlue: #8CABFF;
+
+
+.box{
+    height: 80vh;
+    background: linear-gradient(to top, $lightPurple, #310f5a);
+    
+}
+
+.divisionInfo{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.title{
+    font-family: 'Phudu', cursive;
+    letter-spacing: 0.09cm;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+   
+}
