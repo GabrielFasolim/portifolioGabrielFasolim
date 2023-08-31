@@ -29,8 +29,9 @@ $lightBlue: #8CABFF;
     padding: 0;
 }
 
-.title .span{
-    white-space: pre-line;
+.title span{
+    display: block;
+    color: $lightBlue;
 }
 
 .picprofile{
@@ -43,11 +44,7 @@ $lightBlue: #8CABFF;
     }
 }
 
-.textAbout{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
+
 .button{
     margin-left: 100px;
 }
@@ -55,6 +52,8 @@ $lightBlue: #8CABFF;
 .devTitle{
     color: $darkBlue;
     font-family: 'Phudu', cursive;
+    margin-left: 100px;
+    margin-top: 15px;
 }
 
 
@@ -120,4 +119,23 @@ $lightBlue: #8CABFF;
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+
+.textAbout{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Phudu', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.aboutMe{
+    margin-top: 15px;
+    font-size: 20px;
 }
