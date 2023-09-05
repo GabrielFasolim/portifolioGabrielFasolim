@@ -6,6 +6,7 @@ import { CardModule } from 'primeng/card';
 import { MenubarModule } from 'primeng/menubar';
 import { GalleriaModule } from 'primeng/galleria';
 import { SkeletonModule } from 'primeng/skeleton';
+import { AnimateModule } from 'primeng/animate';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,7 +41,8 @@ import { HabilitiesComponent } from './components/habilities/habilities.componen
     CardModule,
     MenubarModule,
     GalleriaModule,
-    SkeletonModule
+    SkeletonModule,
+    AnimateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
