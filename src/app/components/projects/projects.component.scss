@@ -9,7 +9,15 @@ $lightBlue: #8CABFF;
 
 
 .box{
-    height: 80vh;
-    
+    height: 120vh;
+    background: linear-gradient(to top, $lightPurple, #310f5a);
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Phudu', cursive;
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+
     
 }
