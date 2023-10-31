@@ -1,14 +1,25 @@
 {
     "projetos": [
       {
-        "header":"villavitoria",
-        "p":"Website created for Frigorífico Villa Vitória, my first freelance job",
-        "imagem":"imagem1.jpg"
+        "header":"Mercadão Barato Sul",
+        "p":"Mercadão da carne é outro projeto de freela, seu objetivo é ser uma espécie de MarketPlace onde irão ser comercializados os produtos",
+        "imagem":"./javaIcon.png"
       },
       {
-        "header":"elvis",
-        "p":"Website created for Frigorífico Villa Vitória, my first freelance job",
-        "imagem":"imagem1.jpg"
+        "header":"Soccer Na Gringa",
+        "p":"Websiteeeeeeeeeeeee created for Frigorífico Villa Vitória, my first freelance job",
+        "imagem":"./javaIcon.png"
+      },
+      {
+        "header":"Ichild",
+        "p":"Projeto completo eleito melhor da turma tanto pelo voto popular como pela banca de professores, feito em HTML, SASS(CSS), JS, PHP, SQL, utilizamos o phpmyadmin para rodar o banco",
+        "imagem":"./javaIcon.png"
+      },
+      {
+        "header":"Jogo da velha kombat",
+        "p":"Desenvolvimento Web (2° período): Se consistes em um jogo da velha feito com JavaScript, com algumas funções extras, como o cadastro de usuário e exibição de informações relacionadas ao game,",
+        "imagem":"./javaIcon.png"
       }
+
     ]
- }
+}

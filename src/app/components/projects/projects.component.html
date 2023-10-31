@@ -1,19 +1,20 @@
 <div class="box">
-    <h3>PROJECTS</h3>
+    <h3>MAIN PROJECTS</h3>
     <div class="cards">
-        <p-card *ngFor="let item of projects" header="{{item.header}}" [style]="{ width: '360px' }">
+        <p-card class="cardsProjects" *ngFor="let item of projects" header="{{item.header}}" [style]="{ width: '360px'}">
             <ng-template pTemplate="header">
-                <a href=""><img alt="Card" src="https://primefaces.org/cdn/primeng/images/" /></a>
+                <a href=""><img alt="Card" [src]="item.imagem" /></a>
             </ng-template>
             <p>
-
+                <span>{{item.p}}</span>
             </p>
             <ng-template pTemplate="footer">
-                <p-button label="Visit" icon="pi pi-check"></p-button>
+                <p-button label="Visit"></p-button>
             </ng-template>
         </p-card>
-
     </div>
+    
+    <button pButton pRipple label="View more on github" class="p-button"></button>
 
 </div>
 
