@@ -18,6 +18,11 @@ $lightBlue: #8CABFF;
     font-weight: 700;
     color: white;
     font-size: 30px;
-
+    flex-direction: column;
+    align-items: center;
     
+    
+}
+.cards{
+    display: flex;
 }
