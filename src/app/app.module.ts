@@ -8,6 +8,7 @@ import { GalleriaModule } from 'primeng/galleria';
 import { SkeletonModule } from 'primeng/skeleton';
 import { AnimateModule } from 'primeng/animate';
 import { ButtonModule } from 'primeng/button';
+import { DynamicDialogModule } from 'primeng/dynamicdialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,8 +31,11 @@ import { ContactComponent } from './components/contact/contact.component';
     ProjectsComponent,
     HabilitiesComponent,
     ContactComponent,
-  
-  
+
+
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,8 @@ import { ContactComponent } from './components/contact/contact.component';
     MenubarModule,
     GalleriaModule,
     SkeletonModule,
-    AnimateModule
+    AnimateModule,
+    DynamicDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

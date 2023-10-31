@@ -7,12 +7,14 @@
             </ng-template>
             <p>
                 <span>{{item.p}}</span>
+                <button (click)="open(item)" icon="pi pi-info-circle">Open</button>
             </p>
-            
         </p-card>
     </div>
-    
-    <button pButton pRipple label="View more on github" class="p-button"></button>
+
+    <button class="glow-on-hover" type="button">View on Git Hub</button>
+
+
 
 </div>
 
