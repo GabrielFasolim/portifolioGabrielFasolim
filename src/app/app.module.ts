@@ -12,11 +12,12 @@ import { ButtonModule } from 'primeng/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { StartComponent } from './components/start/start.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { HabilitiesComponent } from './components/habilities/habilities.component';
+import { ContactComponent } from './components/contact/contact.component';
+
 
 
 
@@ -24,11 +25,11 @@ import { HabilitiesComponent } from './components/habilities/habilities.componen
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     StartComponent,
     AboutComponent,
     ProjectsComponent,
     HabilitiesComponent,
+    ContactComponent,
   
   
   ],

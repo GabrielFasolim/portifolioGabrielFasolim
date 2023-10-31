@@ -9,7 +9,7 @@ $lightBlue: #8CABFF;
 
 
 .box{
-    height: 80vh;
+    height: 100vh;
     background: linear-gradient(to top, $lightPurple, #310f5a);
     display: flex;
     justify-content: center;
@@ -24,28 +24,37 @@ $lightBlue: #8CABFF;
 }
 .cardsProjects {
     margin: 10px;
-    transition: transform 0.3s, background-color 0.3s;
-    position: relative;
-    overflow: hidden;
-
+    transition: box-shadow 0.3s ease; // Adiciona uma transição suave para a sombra
     &:hover {
-        transform: scale(1.1) rotate(5deg);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        background-color: #f2f2f2;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s;
-    }
-
-    &:hover img {
-        transform: scale(1.1) rotate(-5deg);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); // Sombra quando o elemento é hover
+        border-bottom: none; // Remove a "border-bottom"
     }
 }
+
+
         
 .cards{
     display: flex;
     margin: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; // Espaço entre os cards
+
+    .cardsProjects {
+        perspective: 1000px; // Adiciona uma perspectiva para a rotação 3D
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); // Transição suave com uma curva de bezier personalizada
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        &:hover {
+            transform: rotateY(20deg) rotateX(10deg) scale(1.05); // Rotação 3D e aumento de tamanho no hover
+        }
+    }
 }

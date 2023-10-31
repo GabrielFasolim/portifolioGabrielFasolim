@@ -1,0 +1,11 @@
+<div class="box">
+    <h2 class="title">CONTACT</h2>
+    <div class="formatContact">
+        <div  class="contact" *ngFor="let item of contato" >
+            <a target="_blank" href="{{item.href}}"><img class="itemContact" [src]=item.imagem alt=""></a>
+            <!-- <p class="pContact">{{item.p}}</p> -->
+            <p class="pContact">{{item.nome}}</p>
+        </div>
+    </div>
+  
+</div>

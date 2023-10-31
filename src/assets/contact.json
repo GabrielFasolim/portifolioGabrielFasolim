@@ -1,0 +1,30 @@
+{
+    "contatos": [
+        {
+            "imagem":"../assets/boxlinked.png",
+            "p":"Linkedin",
+            "nome":"Gabriel Fasolim",
+            "href":"https://www.linkedin.com/in/gabrielfasolim/"
+        },
+        {
+            "imagem":"../assets/boxfone.png",
+            "p":"Telefone",
+            "nome":"55 46 991206418",
+            "href":"https://wa.me/5546991206418"
+        },
+        {
+            "imagem":"../assets/boxgit.png",
+            "p":"Github",
+            "nome":"GabrielFasolim",
+            "href": "https://github.com/GabrielFasolim"
+        },
+        {
+            "imagem":"../assets/boxmail.png",
+            "p":"E-mail",
+            "nome":"gabrielfasolim@hotmail.com",
+            "href":"mailto:gabrielfasolim@hotmail.com"
+        }
+
+
+    ]
+}
