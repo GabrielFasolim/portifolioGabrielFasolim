@@ -9,6 +9,7 @@ import { SkeletonModule } from 'primeng/skeleton';
 import { AnimateModule } from 'primeng/animate';
 import { ButtonModule } from 'primeng/button';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { HabilitiesComponent } from './components/habilities/habilities.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { DynamicDialogComponent } from './components/dynamic-dialog/dynamic-dialog.component';
 
 
 
@@ -31,6 +33,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ProjectsComponent,
     HabilitiesComponent,
     ContactComponent,
+    DynamicDialogComponent
 
 
 
@@ -48,7 +51,8 @@ import { ContactComponent } from './components/contact/contact.component';
     GalleriaModule,
     SkeletonModule,
     AnimateModule,
-    DynamicDialogModule
+    DynamicDialogModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
