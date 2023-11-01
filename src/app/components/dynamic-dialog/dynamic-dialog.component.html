@@ -1,7 +1,10 @@
 <div class="box" >
   <div class="textVideo" >
     <div class="video">
-      <video class="video" [src]="details.video"></video>
+      <video class="video" controls>
+        <source [src]="details.video" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
     </div>
     <div class="text">
       <h2 class="titulo">{{details.header}}</h2>

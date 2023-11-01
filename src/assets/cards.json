@@ -2,12 +2,12 @@
     "projetos": [
       {
         "header":"Mercadão Barato Sul",
-        "p":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
+        "p":"Mercadão Barato Sul é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
         "imagem":"../assets/mercadaoimg.png",
-        "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
+        "descricaoDetails":"Mercadao Barato Sul foi outro freelancer meu e de meu colega Elvis, dessa vez feito com PHP como linguagem de BACKEND, Criamos todo design do zero, utilizamos apenas bootstrap como framework de CSS, Criamos um perfil administrador para não precisarmos realizar a manutenção, utilizamos o MySQL para fazer o banco esse site tem o propósito de ser um mercado online para um açougue, e as compras serão feitas via whatsapp",
         "topicos":"HTML, CSS, JS, PHP, SQL",
         "data": "06/2023",
-        "video": "./assets/mercadao.mp4",
+        "video": "./assets/video mercadao.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
         "hospedado": "sim"
       },
@@ -18,6 +18,7 @@
         "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
         "topicos":"HTML, CSS",
         "data": "10/2023",
+        "video": "./assets/videosoccer.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
         "hospedado": "nao"
       },
