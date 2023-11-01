@@ -29,6 +29,7 @@
         "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
         "topicos":"HTML, CSS, JS, PHP, SQL",
         "data": "05/2023",
+        "video": "./assets/videoichild.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/Ichild",
         "hospedado": "nao"
       },
