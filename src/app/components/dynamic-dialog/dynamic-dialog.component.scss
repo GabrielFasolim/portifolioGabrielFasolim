@@ -105,8 +105,8 @@ $lightBlue: #8CABFF;
 }
 
 .custom-button {
-    background-color: #007BFF; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    background-color: rgb(125, 130, 136); /* Cor de fundo do botão */
+    color: black; /* Cor do texto do botão */
     padding: 5px 10px; /* Espaçamento interno do botão */
     border: none; /* Remova a borda padrão do botão */
     border-radius: 5px; /* Borda arredondada */
@@ -115,5 +115,5 @@ $lightBlue: #8CABFF;
   }
   
   .custom-button:hover {
-    background-color: #0056b3; /* Cor de fundo alterada quando o mouse passa por cima */
+    background-color: #8d9cad; /* Cor de fundo alterada quando o mouse passa por cima */
 }
