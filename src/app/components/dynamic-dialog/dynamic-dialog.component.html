@@ -1,22 +1,23 @@
-<div class="box" *ngFor="let item of details">
+<div class="box" >
   <div class="textVideo" >
-    <div>
-      <img class="picImg" src="../../../assets/neycapateste.jpg" alt="">
+    <div class="video">
+      <video class="video" [src]="details.video"></video>
     </div>
     <div class="text">
-      <h2>{{item.titulo}}</h2>
+      <h2 class="titulo">{{details.header}}</h2>
       <p class="description">
-        "Soccer na Gringa" é um site dedicado ao futebol internacional focado para proxima copa do mundo que promove um canal do YouTube e busca atrair patrocinadores. Oferece conteúdo de alta qualidade, incluindo vídeos, feito puramente em HTML, CSS, JS
+        {{details.descricaoDetails}}
       </p>
-      <p class="topicos">topicos</p>
-      <p class="date">28/10/2023</p>
+      <p class="topicos">Linguagens usadas: {{details.topicos}}</p>
+      <p class="date">{{details.data}}</p>
     </div>
   </div>
 
   <div class="botao">
-    <button class="glow-on-hover" type="button">View on Git Hub</button>
-    <button class="glow-on-hover" type="button">Visit</button>
+    <a href=""><button class="glow-on-hover" type="button">View on Git Hub</button></a>
+    <a href=""><button class="glow-on-hover" type="button" *ngIf="details.hospedado === 'sim'">Visit</button></a>
   </div>
+  <button class="custom-button" (click)="fecharDialog()">Fechar</button>
   
 
 </div>

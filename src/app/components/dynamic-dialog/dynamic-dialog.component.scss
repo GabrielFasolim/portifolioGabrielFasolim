@@ -15,7 +15,7 @@ $lightBlue: #8CABFF;
     margin-left: 50px;
     width: 500px;
 }
-.picImg{
+.video{
     height: 350px;
 }
 
@@ -89,3 +89,31 @@ $lightBlue: #8CABFF;
     100% { background-position: 0 0; }
 }
   
+
+.date{
+    font-weight: bold;
+    margin-top: 5px;
+}
+.titulo{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.topicos{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.custom-button {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+    border: none; /* Remova a borda padrão do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; 
+    margin-top: 5px;/* Cursor de mão para indicar que é clicável */
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3; /* Cor de fundo alterada quando o mouse passa por cima */
+}

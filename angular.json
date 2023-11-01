@@ -27,7 +27,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/cards.json",
+              "src/assets/contact.json"
             ],
             "styles": [
               "src/styles.scss",

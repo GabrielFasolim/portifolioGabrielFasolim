@@ -1,4 +1,4 @@
-<div class="box">
+<div id="projetos" class="box">
     <h3>MAIN PROJECTS</h3>
     <div class="cards">
         <p-card class="cardsProjects" *ngFor="let item of projects" header="{{item.header}}" [style]="{ width: '360px'}">
@@ -8,7 +8,9 @@
             <p>
                 <span>{{item.p}}</span>
             </p>
-            <button (click)="open(item)" icon="pi pi-info-circle">Open</button>
+            <button class="custom-button" (click)="open(item)">
+                view more
+            </button>
         </p-card>
     </div>
 
