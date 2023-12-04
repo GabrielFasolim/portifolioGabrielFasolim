@@ -9,7 +9,8 @@
         "data": "06/2023",
         "video": "./assets/video mercadao.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
-        "hospedado": "sim"
+        "hospedado": "sim",
+        "link": "https://mercadaobaratosul.shop"
       },
       {
         "header":"Soccer Na Gringa",
@@ -20,7 +21,8 @@
         "data": "10/2023",
         "video": "./assets/videosoccer.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
-        "hospedado": "nao"
+        "hospedado": "sim",
+        "link": "https://soccernagringa.com"
       },
       {
         "header":"Ichild",

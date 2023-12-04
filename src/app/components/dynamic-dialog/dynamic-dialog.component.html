@@ -18,7 +18,7 @@
 
   <div class="botao">
     <a href=""><button class="glow-on-hover" type="button">View on Git Hub</button></a>
-    <a href=""><button class="glow-on-hover" type="button" *ngIf="details.hospedado === 'sim'">Visit</button></a>
+    <a target="_blank" [href]="details.link"><button class="glow-on-hover" type="button" *ngIf="details.hospedado === 'sim'">Visit</button></a>
   </div>
   <button class="custom-button" (click)="fecharDialog()">Fechar</button>
   
