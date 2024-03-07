@@ -5,19 +5,50 @@
         "p":"Mercadão Barato Sul é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
         "imagem":"../assets/mercadaoimg.png",
         "descricaoDetails":"Mercadao Barato Sul foi outro freelancer meu e de meu colega Elvis, dessa vez feito com PHP como linguagem de BACKEND, Criamos todo design do zero, utilizamos apenas bootstrap como framework de CSS, Criamos um perfil administrador para não precisarmos realizar a manutenção, utilizamos o MySQL para fazer o banco esse site tem o propósito de ser um mercado online para um açougue, e as compras serão feitas via whatsapp",
-        "topicos":"HTML, CSS, JS, PHP, SQL",
+        "topicos": [
+          {
+            "imagem": "../assets/php.png"
+
+          },
+          {
+            "imagem": "../assets/css.png"
+
+          },
+          {
+            "imagem": "../assets/htmlIcon.png"
+          },
+          {
+            "imagem": "../assets/jsIcon.png"
+          },
+          {
+            "imagem": "../assets/sqlIcon.png"
+          }
+        ],
         "data": "06/2023",
         "video": "./assets/video mercadao.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
         "hospedado": "sim",
         "link": "https://mercadaobaratosul.shop"
+
       },
       {
         "header":"Soccer Na Gringa",
         "p":"Soccer na gringa foi mais um freela, essa landing page tem o objetivo de atrair patrocinadores para um canal do youtube e exbir informações sobre o projeto, feito puramente em HTML, CSS, JS ",
         "imagem": "../assets/soccerimg.png",
         "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
-        "topicos":"HTML, CSS",
+        "topicos": [{
+
+          "imagem": "../assets/css.png"
+        }
+        ,{
+          "imagem": "../assets/htmlIcon.png"
+        },
+        {
+          "imagem": "../assets/jsIcon.png"
+        }
+
+
+      ],
         "data": "10/2023",
         "video": "./assets/videosoccer.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
@@ -29,20 +60,49 @@
         "p":"Projeto completo eleito melhor da turma tanto pelo voto popular como pela banca de professores, feito em HTML, SASS(CSS), JS, PHP, SQL, utilizamos o phpmyadmin para rodar o banco",
         "imagem":"../assets/ichild.png",
         "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
-        "topicos":"HTML, CSS, JS, PHP, SQL",
+        "topicos": [{
+          "imagem": "../assets/php.png"
+        }
+        ,{
+          "imagem": "../assets/css.png"
+        }
+        ,{
+          "imagem": "../assets/htmlIcon.png"
+        },
+        {
+          "imagem": "../assets/jsIcon.png"
+        },
+        {
+          "imagem": "../assets/sqlIcon.png"
+        }
+
+      ],
         "data": "05/2023",
         "video": "./assets/videoichild.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/Ichild",
         "hospedado": "nao"
       },
       {
-        "header":"Jogo da velha kombat",
+        "header":"AgendaHub",
         "p":"Desenvolvimento Web (2° período): Se consistes em um jogo da velha feito com JavaScript, com algumas funções extras, como o cadastro de usuário e exibição de informações relacionadas ao game,",
-        "imagem":"../assets/jogovelha.png",
+        "imagem":"../assets/agndabox.png",
         "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
-        "topicos":"HTML, CSS, JS",
+        "topicos": [{
+          "imagem": "../assets/css.png"
+        }
+        ,{
+          "imagem": "../assets/htmlIcon.png"
+        },
+        {
+          "imagem": "../assets/angularIcon.png"
+        },
+        {
+          "imagem": "../assets/sqlIcon.png"
+        }
+
+      ],
         "data": "10/2022",
-        "hrefGit": "https://github.com/GabrielFasolim/Jogo-da-velha-KOMBAT",
+        "hrefGit": "https://github.com/agendahub",
         "hospedado": "nao"
       }
 
