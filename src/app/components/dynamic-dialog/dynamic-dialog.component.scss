@@ -19,9 +19,55 @@ $lightBlue: #8CABFF;
     height: 350px;
 }
 
-.botao{
-    display: flex;
-    align-items: center;
+.botao-animado {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Animação ao clicar */
+  &:active {
+    transform: scale(0.9);
+    box-shadow: none;
+  }
+
+  /* Animação de contorno */
+  @keyframes contorno {
+    from {
+      outline: none;
+    }
+    to {
+      outline: 2px solid #fff;
+      outline-offset: 5px;
+    }
+  }
+
+  &.ativo {
+    animation: contorno 1s infinite;
+  }
+}
+@keyframes crescer {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+&.ativo {
+  animation: crescer 1s infinite alternate;
 }
 
 
@@ -39,8 +85,8 @@ $lightBlue: #8CABFF;
     margin: 20px;
     font-family: 'Phudu', cursive;
     font-weight: 700;
-  
-  
+
+
     &:before {
         content: '';
         background: linear-gradient(45deg, $gradient-colors);
@@ -57,19 +103,19 @@ $lightBlue: #8CABFF;
         transition: opacity .3s ease-in-out;
         border-radius: 100px;
     }
-  
+
     &:active {
         color: #000;
     }
-  
+
     &:active:after {
         background: transparent;
     }
-  
+
     &:hover:before {
         opacity: 1;
     }
-  
+
     &:after {
         z-index: -1;
         content: '';
@@ -82,17 +128,18 @@ $lightBlue: #8CABFF;
         border-radius: 100px;
     }
   }
-  
+
   @keyframes glowing {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-  
+
 
 .date{
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .titulo{
     font-size: 40px;
@@ -110,10 +157,33 @@ $lightBlue: #8CABFF;
     padding: 5px 10px; /* Espaçamento interno do botão */
     border: none; /* Remova a borda padrão do botão */
     border-radius: 5px; /* Borda arredondada */
-    cursor: pointer; 
+    cursor: pointer;
     margin-top: 5px;/* Cursor de mão para indicar que é clicável */
   }
-  
+
   .custom-button:hover {
     background-color: #8d9cad; /* Cor de fundo alterada quando o mouse passa por cima */
+}
+
+.closeButton{
+  height: 15px;
+
+
+}
+
+.close{
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: $lightBlue;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.boxLanguages{
+  display: flex;
+
+}
+.languages{
+  height: 70px;
 }
