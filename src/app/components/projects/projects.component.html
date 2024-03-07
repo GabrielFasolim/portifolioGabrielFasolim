@@ -3,14 +3,11 @@
     <div class="cards">
         <p-card class="cardsProjects" *ngFor="let item of projects" header="{{item.header}}" [style]="{ width: '360px'}">
             <ng-template pTemplate="header">
-                <a href=""><img alt="Card" [src]="item.imagem" /></a>
+                <a (click)="open(item)"><img alt="Card" [src]="item.imagem" /></a>
             </ng-template>
             <p>
                 <span>{{item.p}}</span>
             </p>
-            <button class="custom-button" (click)="open(item)">
-                view more
-            </button>
         </p-card>
     </div>
 
