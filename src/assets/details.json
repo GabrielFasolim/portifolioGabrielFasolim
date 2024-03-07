@@ -3,7 +3,24 @@
         {
             "titulo":"Mercadão Barato Sul",
             "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
-            "topicos":"HTML, CSS, JS, PHP, SQL",
+            "topicos": [{
+              "imagem": "../assets/php.png"
+
+            }
+            ,{
+              "imagem": "../assets/css.png"
+            }
+            ,{
+              "imagem": "../assets/htmlIcon.png"
+            },
+            {
+              "imagem": "../assets/jsIcon.png"
+            },
+            {
+              "imagem": "../assets/sqlIcon.png"
+            }
+
+          ],
             "data": "06/2023",
             "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
             "hospedado": "sim"
@@ -11,7 +28,24 @@
         {
             "titulo":"Soccer na gringa",
             "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
-            "topicos":"HTML, CSS",
+            "topicos": [{
+              "imagem": "../assets/php.png"
+
+            }
+            ,{
+              "imagem": "../assets/css.png"
+            }
+            ,{
+              "imagem": "../assets/htmlIcon.png"
+            },
+            {
+              "imagem": "../assets/jsIcon.png"
+            },
+            {
+              "imagem": "../assets/sqlIcon.png"
+            }
+
+          ],
             "data": "10/2023",
             "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
             "hospedado": "nao"
@@ -19,15 +53,44 @@
         {
             "titulo":"Ichild",
             "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
-            "topicos":"HTML, CSS, JS, PHP, SQL",
+            "topicos": [{
+              "imagem": "../assets/php.png"
+            }
+            ,{
+              "imagem": "../assets/css.png"
+            }
+            ,{
+              "imagem": "../assets/htmlIcon.png"
+            },
+            {
+              "imagem": "../assets/jsIcon.png"
+            },
+            {
+              "imagem": "../assets/sqlIcon.png"
+            }
+
+          ],
             "data": "05/2023",
             "hrefGit": "https://github.com/GabrielFasolim/Ichild",
             "hospedado": "nao"
         },
         {
-            "titulo":"Jogo da velha kombat",
+            "titulo":"Agenda Hub",
             "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
-            "topicos":"HTML, CSS, JS",
+            "topicos": [{
+              "imagem": "../assets/css.png"
+            }
+            ,{
+              "imagem": "../assets/htmlIcon.png"
+            },
+            {
+              "imagem": "../assets/angularIcon.png"
+            },
+            {
+              "imagem": "../assets/sqlIcon.png"
+            }
+
+          ],
             "data": "10/2022",
             "hrefGit": "https://github.com/GabrielFasolim/Jogo-da-velha-KOMBAT",
             "hospedado": "nao"
