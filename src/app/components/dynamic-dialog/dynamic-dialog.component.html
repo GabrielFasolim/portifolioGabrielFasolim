@@ -1,4 +1,7 @@
 <div class="box" >
+  <div class="close">
+    <img class="closeButton" src="../assets/x.png" alt="close" (click)="fecharDialog()">
+  </div>
   <div class="textVideo" >
     <div class="video">
       <video class="video" controls>
@@ -11,16 +14,20 @@
       <p class="description">
         {{details.descricaoDetails}}
       </p>
-      <p class="topicos">Linguagens usadas: {{details.topicos}}</p>
       <p class="date">{{details.data}}</p>
+      <div class="boxLanguages">
+        <img  *ngFor="let item of details.topicos" class="languages" [src]="item.imagem" alt="">
+      </div>
+      <div class="botao">
+        <a href=""><button class="glow-on-hover" type="button">View on Git Hub</button></a>
+        <a target="_blank" [href]="details.link"><button class="glow-on-hover" type="button" *ngIf="details.hospedado === 'sim'">Visit</button></a>
+      </div>
+      <button class="botao-animado">Clique aqui!</button>
+
+
     </div>
   </div>
 
-  <div class="botao">
-    <a href=""><button class="glow-on-hover" type="button">View on Git Hub</button></a>
-    <a target="_blank" [href]="details.link"><button class="glow-on-hover" type="button" *ngIf="details.hospedado === 'sim'">Visit</button></a>
-  </div>
-  <button class="custom-button" (click)="fecharDialog()">Fechar</button>
-  
+
 
 </div>
