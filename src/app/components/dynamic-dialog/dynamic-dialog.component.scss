@@ -19,57 +19,6 @@ $lightBlue: #8CABFF;
     height: 350px;
 }
 
-.botao-animado {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    background-color: #fff;
-    color: #000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Animação ao clicar */
-  &:active {
-    transform: scale(0.9);
-    box-shadow: none;
-  }
-
-  /* Animação de contorno */
-  @keyframes contorno {
-    from {
-      outline: none;
-    }
-    to {
-      outline: 2px solid #fff;
-      outline-offset: 5px;
-    }
-  }
-
-  &.ativo {
-    animation: contorno 1s infinite;
-  }
-}
-@keyframes crescer {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.2);
-  }
-}
-
-&.ativo {
-  animation: crescer 1s infinite alternate;
-}
-
 
 .glow-on-hover {
     width: 150px;

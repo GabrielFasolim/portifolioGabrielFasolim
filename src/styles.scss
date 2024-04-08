@@ -71,3 +71,16 @@ $darkPurple: #35155D;
 $lightPurple: #512B81;
 $darkBlue: #4477CE;
 $lightBlue: #8CABFF;
+
+body::-webkit-scrollbar {
+  width: 10px;
+
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $darkPurple;
+}

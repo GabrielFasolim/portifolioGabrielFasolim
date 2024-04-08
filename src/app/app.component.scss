@@ -1,5 +1,12 @@
 @import url('../../node_modules/aos/dist/aos.css');
+$gradient-colors: #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000;
+
+$darkPurple: #35155D;
+$lightPurple: #6c449e;
+$darkBlue: #4477CE;
+$lightBlue: #8CABFF;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
