@@ -84,9 +84,9 @@
       },
       {
         "header":"AgendaHub",
-        "p":"Desenvolvimento Web (2° período): Se consistes em um jogo da velha feito com JavaScript, com algumas funções extras, como o cadastro de usuário e exibição de informações relacionadas ao game,",
+        "p":" Solução prática para organizar compromissos e tarefas, com alertas personalizados, diferentes modos de visualização e sincronização com outros calendários.",
         "imagem":"../assets/agndabox.png",
-        "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
+        "descricaoDetails":"O AgendaHub é a ferramenta ideal para organizar sua rotina de forma simples e eficaz. Com uma interface intuitiva e fácil de usar, ele permite que você agende compromissos, tarefas e eventos importantes em um só lugar. Personalize alertas, defina prioridades e nunca mais perca um prazo ou reunião.",
         "topicos": [{
           "imagem": "../assets/css.png"
         }
@@ -101,9 +101,11 @@
         }
 
       ],
-        "data": "10/2022",
-        "hrefGit": "https://github.com/agendahub",
-        "hospedado": "nao"
+        "data": "06/24",
+        "video": "./assets/agendahubvideo.mp4",
+        "hrefGit": "https://github.com/agendahub/app.agendahub",
+        "hospedado": "sim",
+        "link": "https://dev.agendahub.app/home"
       }
 
     ]

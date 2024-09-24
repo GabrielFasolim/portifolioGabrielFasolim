@@ -19,7 +19,7 @@
         <img  *ngFor="let item of details.topicos" class="languages" [src]="item.imagem" alt="">
       </div>
       <div class="botao">
-        <a href=""><button class="glow-on-hover" type="button">View on Git Hub</button></a>
+        <a [href]="details.link"><button class="glow-on-hover" type="button">View on Git Hub</button></a>
         <a target="_blank" [href]="details.link"><button class="glow-on-hover" type="button" *ngIf="details.hospedado === 'sim'">Visit</button></a>
       </div>
 

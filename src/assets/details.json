@@ -76,7 +76,7 @@
         },
         {
             "titulo":"Agenda Hub",
-            "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
+            "descricaoDetails":"https://github.com/agendahub/app.agendahub",
             "topicos": [{
               "imagem": "../assets/css.png"
             }
@@ -92,8 +92,8 @@
 
           ],
             "data": "10/2022",
-            "hrefGit": "https://github.com/GabrielFasolim/Jogo-da-velha-KOMBAT",
-            "hospedado": "nao"
+            "hrefGit": "https://github.com/agendahub/app.agendahub",
+            "hospedado": "sim"
         }
 
     ]
