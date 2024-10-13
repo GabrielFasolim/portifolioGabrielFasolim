@@ -60,7 +60,7 @@
         "header":"Ichild",
         "p":"Projeto completo eleito melhor da turma tanto pelo voto popular como pela banca de professores, feito em HTML, SASS(CSS), JS, PHP, SQL, utilizamos o phpmyadmin para rodar o banco",
         "imagem":"../assets/ichild.png",
-        "descricaoDetails":"Mercadão da carne é outro projeto de freela, seu objetivo é ser um market online para um açougue feito em HTML, CSS, JS, PHP, SQL, hospedamos na hostinger para poder rodar o banco de dados",
+        "descricaoDetails":"iChild é um aplicativo criado para ajudar pais a gerenciar o transporte escolar de seus filhos com facilidade. Com o iChild, você pode acompanhar o transporte escolar em tempo real, garantindo a segurança do seu filho. Além disso, o aplicativo envia notificações instantâneas sobre horários de chegada e partida, permitindo que você se mantenha informado a qualquer momento. Organizar os horários de transporte se torna prático e eficiente, proporcionando a tranquilidade que você precisa enquanto seu filho se desloca para a escola",
         "topicos": [{
           "imagem": "../assets/php.png"
         }
