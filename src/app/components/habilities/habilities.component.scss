@@ -1,46 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;700&display=swap');
+
 $gradient-colors: #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000;
 
 $darkPurple: #35155D;
 $lightPurple: #6c449e;
 $darkBlue: #4477CE;
 $lightBlue: #8CABFF;
+
 html {
     scroll-behavior: smooth;
 }
 
-
-.box{
+.box {
     height: 50vh;
     background: linear-gradient(to bottom, $lightPurple, #310f5a);
     padding-top: 150px;
     text-align: center;
 
+    @media (max-width: 1024px) {
+        // Permite que a caixa se ajuste automaticamente em telas menores
+        padding-top: 350px;
+        padding-bottom: 250px; // Ajuste o padding para telas menores
+    }
 
-}
-
-
-
-.title{
-    font-family: 'Phudu', cursive;
-    font-weight: 700;
-    color: white;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-   
-}
-
-.icons{
-    height: 150px;
-    &:hover{
-        transform: scale(1.1);
-        transition: 0.5s;
+    @media (max-width: 768px) {
+        height: auto; // Permite que a caixa se ajuste automaticamente em telas menores
+        padding-top: 100px; // Ajuste o padding para telas menores
     }
 }
 
+.title {
+    font-family: 'Phudu', cursive;
+    font-weight: 700;
+    color: white;
+    font-size: 2rem; // Use rem para tamanhos de fonte responsivos
+    margin: 0;
+    padding: 0;
 
+    @media (max-width: 1024px) {
+        font-size: 1.5rem; // Reduz a fonte em telas menores
+    }
 
+    @media (max-width: 768px) {
+        font-size: 1.5rem; // Reduz a fonte em telas menores
+    }
+}
 
+.icons {
+    height: 150px;
+    transition: transform 0.5s; // Transição suave
 
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        height: 100px; // Ajusta a altura do ícone em telas menores
+    }
+}

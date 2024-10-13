@@ -11,55 +11,86 @@ html {
     scroll-behavior: smooth;
 }
 
-
-.box{
+.box {
     height: 80vh;
     background: linear-gradient(to top, $lightPurple, #310f5a);
-    
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 20px;
+    }
 }
 
-.divisionInfo{
+.divisionInfo {
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
 }
 
-.title{
+.title {
     font-family: 'Phudu', cursive;
     letter-spacing: 0.09cm;
     color: white;
     font-size: 40px;
     margin-left: 100px;
     padding: 0;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
-.title span{
+.title span {
     display: block;
     color: $lightBlue;
 }
 
-.picprofile{
+.picprofile {
     border-radius: 100%;
     height: 350px;
     transition: transform 0.35s; 
     margin-right: 100px;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        height: 250px;
+        margin: 20px 0;
     }
 }
 
-
-.button{
+.button {
     margin-left: 100px;
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
-.devTitle{
+.devTitle {
     color: $darkBlue;
     font-family: 'Phudu', cursive;
     margin-left: 100px;
     margin-top: 15px;
-}
 
+    @media (max-width: 768px) {
+        margin-left: 0;
+        text-align: center;
+    }
+}
 
 .glow-on-hover {
     width: 220px;
@@ -75,7 +106,6 @@ html {
     margin: 20px;
     font-family: 'Phudu', cursive;
     font-weight: 700;
-    
 
     &:before {
         content: '';
@@ -125,8 +155,7 @@ html {
     100% { background-position: 0 0; }
 }
 
-
-.textAbout{
+.textAbout {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -137,25 +166,48 @@ html {
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
+
+    @media (max-width: 768px) {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 24px;
+    }
 }
 
-.aboutMe{
+.aboutMe {
     margin-top: 15px;
     font-size: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
-.xpLanguage{
+.xpLanguage {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.xp{
+.xp {
     margin-top: 50px;
-   
+
+    @media (max-width: 768px) {
+        margin-top: 30px;
+        text-align: center;
+    }
 }
 
-.languages{
+.languages {
     margin-top: 50px;
-    
+
+    @media (max-width: 768px) {
+        margin-top: 30px;
+        text-align: center;
+    }
 }

@@ -54,6 +54,7 @@
         "hrefGit": "https://github.com/GabrielFasolim/MercadaoDaCarne",
         "hospedado": "sim",
         "link": "https://soccernagringa.com"
+        
       },
       {
         "header":"Ichild",
@@ -80,7 +81,8 @@
         "data": "05/2023",
         "video": "./assets/videoichild.mp4",
         "hrefGit": "https://github.com/GabrielFasolim/Ichild",
-        "hospedado": "nao"
+        "hospedado": "sim",
+        "link": "https://github.com/GabrielFasolim/Ichild"
       },
       {
         "header":"AgendaHub",

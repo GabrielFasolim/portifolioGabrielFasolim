@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;700&display=swap');
+
 $gradient-colors: #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000;
 
 $darkPurple: #35155D;
@@ -11,47 +12,57 @@ html {
     scroll-behavior: smooth;
 }
 
-
-.box{
+.box {
     height: 60vh;
     background: linear-gradient(to bottom, $lightPurple, #310f5a);
     padding-top: 150px;
     text-align: center;
-    
+
+    @media (max-width: 768px) {
+        height: auto; // Permite que a caixa se ajuste automaticamente em telas menores
+        padding-top: 100px; // Ajuste o padding para telas menores
+    }
 }
 
-
-.title{
+.title {
     font-family: 'Phudu', cursive;
     font-weight: 700;
     color: white;
-    font-size: 30px;
+    font-size: 2rem; // Use rem para tamanhos de fonte responsivos
     margin: 0;
     padding: 0;
 
+    @media (max-width: 768px) {
+        font-size: 1.5rem; // Reduz a fonte em telas menores
+    }
 }
 
-
-.itemContact{
+.itemContact {
     height: 80px;
     border-radius: 50%;
-    
 }
 
-.pContact{
+.pContact {
     font-family: 'Phudu', cursive;
     font-weight: 300;
     color: white;
-    font-size: 15px;
+    font-size: 1rem; // Use rem para tamanhos de fonte responsivos
     margin: 0;
     padding: 0;
     margin: 5px;
-    
-}
-.contact{
-    margin: 30px;
+
+    @media (max-width: 768px) {
+        font-size: 0.875rem; // Ajusta a fonte para telas menores
+    }
 }
 
+.contact {
+    margin: 30px;
+
+    @media (max-width: 768px) {
+        margin: 15px; // Ajusta a margem para telas menores
+    }
+}
 
 .formatContact {
     display: flex;
@@ -59,9 +70,14 @@ html {
     align-items: center;
     margin-top: 50px;
 
+    @media (max-width: 768px) {
+        flex-direction: column; // Alinha os itens verticalmente em telas menores
+        margin-top: 30px; // Ajusta a margem para telas menores
+    }
+
     .contact {
         margin: 10px;
-        transition: transform 0.3s ease; // Adiciona uma transição suave
+        transition: transform 0.3s ease;
 
         &:hover {
             transform: scale(1.05); // Aumenta ligeiramente o tamanho no hover
@@ -70,6 +86,5 @@ html {
         a {
             text-decoration: none;
         }
-
     }
 }
