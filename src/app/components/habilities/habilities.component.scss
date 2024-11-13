@@ -18,15 +18,21 @@ html {
     padding-top: 150px;
     text-align: center;
 
+    @media (max-width: 1366px) {
+        padding-top: 120px;  // Ajuste para a resolução 1366 x 768
+        height: 45vh; // Reduz um pouco a altura
+    }
+
     @media (max-width: 1024px) {
-        // Permite que a caixa se ajuste automaticamente em telas menores
-        padding-top: 350px;
-        padding-bottom: 250px; // Ajuste o padding para telas menores
+        padding-top: 250px;
+        padding-bottom: 200px; // Ajuste o padding para telas menores
+        height: auto; 
     }
 
     @media (max-width: 768px) {
-        height: auto; // Permite que a caixa se ajuste automaticamente em telas menores
-        padding-top: 100px; // Ajuste o padding para telas menores
+        height: auto; 
+        padding-top: 100px; 
+        padding-bottom: 150px;
     }
 }
 
@@ -34,28 +40,42 @@ html {
     font-family: 'Phudu', cursive;
     font-weight: 700;
     color: white;
-    font-size: 2rem; // Use rem para tamanhos de fonte responsivos
+    font-size: 2rem; 
     margin: 0;
     padding: 0;
 
+    @media (max-width: 1368px) {
+        font-size: 1.8rem;
+        padding-top: 150px;
+        //padding-bottom: 200px; // Reduz levemente para a resolução 1366 x 768
+    }
+
     @media (max-width: 1024px) {
-        font-size: 1.5rem; // Reduz a fonte em telas menores
+        font-size: 1.5rem;
     }
 
     @media (max-width: 768px) {
-        font-size: 1.5rem; // Reduz a fonte em telas menores
+        font-size: 1.3rem; 
     }
 }
 
 .icons {
     height: 150px;
-    transition: transform 0.5s; // Transição suave
+    transition: transform 0.5s;
 
     &:hover {
         transform: scale(1.1);
     }
 
+    @media (max-width: 1368px) {
+        height: 120px; // Ajusta altura dos ícones para a resolução 1366 x 768
+    }
+
+    @media (max-width: 1024px) {
+        height: 110px;
+    }
+
     @media (max-width: 768px) {
-        height: 100px; // Ajusta a altura do ícone em telas menores
+        height: 100px;
     }
 }
