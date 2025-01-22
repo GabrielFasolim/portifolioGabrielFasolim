@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./start.component.scss']
 })
 export class StartComponent {
-  texto: string = 'welcome to gabriel fasolim platform';
+  texto: string = 'bem vindo a plataforma do Gabriel Fasolim';
 
   transformarParaMaiusculas() {
     this.texto = this.texto.toUpperCase();

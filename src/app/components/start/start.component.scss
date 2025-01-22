@@ -14,7 +14,26 @@ $lightBlue: #8CABFF;
     background-color: $darkPurple;
     height: 90vh;
     background: linear-gradient(to bottom, $lightPurple, #310f5a);
+    position: relative;
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../../../assets/htmlSimbol.png');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+        z-index: 0;
+    }
+
+    h1, h4, .wrapper {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .boxInicial .title{
@@ -152,6 +171,29 @@ a{
       width: 100%; // Botão ocupa toda a largura disponível
       height: 50px; // Ajuste na altura do botão
   }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); // Move para baixo
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); // Volta à posição original
+    }
+}
+
+.animated {
+    animation: fadeIn 1s ease-in-out; // Aplica a animação
+}
+
+.wrapper a {
+    transition: transform 0.3s; // Adiciona transição ao botão
+}
+
+.wrapper a:hover {
+    transform: scale(1.05); // Aumenta o botão ao passar o mouse
 }
 
 

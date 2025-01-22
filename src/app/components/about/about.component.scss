@@ -155,59 +155,102 @@ html {
     100% { background-position: 0 0; }
 }
 
-.textAbout {
-    margin-top: 20px;
+.content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0 150px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+}
+
+.boxTitulo{
+    display: flex;
     justify-content: center;
+    align-items: center;
+
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+}
+.titulo{
     font-family: 'Phudu', cursive;
     color: white;
     font-size: 30px;
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-bottom: 40px;
+    padding: 0;
 
     @media (max-width: 768px) {
-        margin-left: 20px;
-        margin-right: 20px;
         font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+.textAbout {
+    flex: 1;
+    margin-right: 20px;
+    font-family: 'Phudu', cursive;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    line-height: 1.5;
+    padding: 10px;
+
+    @media (max-width: 768px) {
+        margin-right: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.xpLanguage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 20px;
+
+    @media (max-width: 768px) {
+        align-items: center;
+        margin-left: 0;
     }
 }
 
 .aboutMe {
     margin-top: 15px;
     font-size: 20px;
+    line-height: 1.4;
 
     @media (max-width: 768px) {
         font-size: 16px;
     }
 }
 
-.xpLanguage {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.xp, .languages {
+    margin-top: 60px;
+    font-family: 'Phudu', cursive;
+    color: white;
+    font-size: 20px;
 
     @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.xp {
-    margin-top: 50px;
-
-    @media (max-width: 768px) {
-        margin-top: 30px;
         text-align: center;
     }
 }
 
-.languages {
-    margin-top: 50px;
+.xp h3, .languages h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: $lightBlue;
+}
 
-    @media (max-width: 768px) {
-        margin-top: 30px;
-        text-align: center;
-    }
+.xp p, .languages p {
+    margin: 5px 0;
 }
