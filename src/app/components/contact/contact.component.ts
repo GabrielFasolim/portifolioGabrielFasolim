@@ -7,10 +7,5 @@ import * as contact from '../../../assets/contact.json';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  
-    constructor() { }
-      contato: any = (contact as any).default.contatos;
-
-  
+  contato: any = (contact as any).default.contatos;
 }
-

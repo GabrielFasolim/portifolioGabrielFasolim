@@ -1,90 +1,167 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;700&display=swap');
 
-$gradient-colors: #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000;
+// Color variables
+$dark: #35155D;
+$primary: #6c449e;
+$accent: #8CABFF;
+$light: #ffffff;
 
-$darkPurple: #35155D;
-$lightPurple: #6c449e;
-$darkBlue: #4477CE;
-$lightBlue: #8CABFF;
-
-html {
-    scroll-behavior: smooth;
+.contact-container {
+  background: linear-gradient(135deg, $primary, $dark);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(108, 68, 158, 0.4) 0%, transparent 70%);
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+  }
 }
 
-.box {
-    height: 60vh;
-    background: linear-gradient(to bottom, $lightPurple, #310f5a);
-    padding-top: 150px;
-    text-align: center;
-
-    @media (max-width: 768px) {
-        height: auto; // Permite que a caixa se ajuste automaticamente em telas menores
-        padding-top: 100px; // Ajuste o padding para telas menores
-    }
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
 }
 
-.title {
-    font-family: 'Phudu', cursive;
-    font-weight: 700;
-    color: white;
-    font-size: 2rem; // Use rem para tamanhos de fonte responsivos
-    margin: 0;
-    padding: 0;
-
-    @media (max-width: 768px) {
-        font-size: 1.5rem; // Reduz a fonte em telas menores
-    }
+.contact-title {
+  font-family: 'Phudu', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $light;
+  margin: 0;
+  letter-spacing: 2px;
+  
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
-.itemContact {
-    height: 80px;
-    border-radius: 50%;
+.title-bar {
+  width: 80px;
+  height: 4px;
+  background: $accent;
+  margin: 1rem auto;
+  border-radius: 2px;
 }
 
-.pContact {
-    font-family: 'Phudu', cursive;
-    font-weight: 300;
-    color: white;
-    font-size: 1rem; // Use rem para tamanhos de fonte responsivos
-    margin: 0;
-    padding: 0;
-    margin: 5px;
-
-    @media (max-width: 768px) {
-        font-size: 0.875rem; // Ajusta a fonte para telas menores
-    }
+.contact-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.contact {
-    margin: 30px;
-
-    @media (max-width: 768px) {
-        margin: 15px; // Ajusta a margem para telas menores
-    }
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
 }
 
-.formatContact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-
-    @media (max-width: 768px) {
-        flex-direction: column; // Alinha os itens verticalmente em telas menores
-        margin-top: 30px; // Ajusta a margem para telas menores
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    
+    .icon-wrapper {
+      background: $accent;
+      
+      img {
+        transform: scale(1.1);
+      }
     }
-
-    .contact {
-        margin: 10px;
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: scale(1.05); // Aumenta ligeiramente o tamanho no hover
-        }
-
-        a {
-            text-decoration: none;
-        }
+    
+    .contact-name {
+      color: $accent;
     }
+  }
+  
+  a {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+  }
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  
+  img {
+    max-width: 40px;
+    max-height: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+    
+    img {
+      max-width: 35px;
+      max-height: 35px;
+    }
+  }
+}
+
+.contact-info {
+  width: 100%;
+}
+
+.contact-name {
+  font-family: 'Phudu', cursive;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $light;
+  margin: 0;
+  transition: color 0.3s ease;
+  
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 }

@@ -1,10 +1,52 @@
 <div class="boxInicial">
-    <h1 class="title animated fadeIn">Construindo o futuro linha por linha</h1>
-    <div class="infoInicio">
-        <h4 class="msgInicio animated fadeIn">{{texto | uppercase}}</h4>
-        
-        <div class="wrapper">
-            <a class="animated fadeIn" href="#box"><span><S></S>Saiba mais</span></a>
-        </div>
+    <!-- Background elements -->
+    <div class="background">
+      <div class="gradient-sphere"></div>
+      <div class="grid"></div>
     </div>
-</div>
+    
+    <!-- Animated particles -->
+    <canvas #canvas class="particles-canvas"></canvas>
+    
+    <div class="content-container">
+      <!-- Header with animated reveal -->
+      <div class="header-section">
+        <h1 class="title">
+          <span class="title-line">Construo o que faz sentido.
+        </span>
+          <span class="title-line"><span class="accent">Entrego  o que gera valor.</span></span>
+         
+        </h1>
+        
+        <!-- Separator -->
+        <div class="separator"></div>
+        
+        <!-- Description -->
+        <p class="description">{{texto}}</p>
+        
+        <!-- Skills display -->
+        <div id="box" class="box" >
+            
+            <div class="habilidades" >
+                <img class="icons" src="../../../assets/angularIcon.png" alt="">
+                <img class="icons" src="../../../assets/vueicon.png" alt="">
+                <img class="icons" src="../../../assets/csharpicon.png" alt="">
+                <img class="icons" src="../../../assets/typescripticon.png" alt="">
+                <img class="icons" src="../../../assets/pythonIcon.png" alt="">
+                <img class="icons" src="../../../assets/sqlIcon.png" alt="">
+                <img class="icons" src="../../../assets/nexticon.png" alt="">
+            </div>
+        </div>
+        
+      </div>
+      
+      <!-- CTA Button -->
+    </div>
+    
+    
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="line"></div>
+      <div class="dot"></div>
+    </div>
+  </div>

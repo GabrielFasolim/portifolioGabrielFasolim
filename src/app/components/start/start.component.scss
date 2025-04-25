@@ -1,218 +1,410 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;500;700&display=swap');
 
-$darkPurple: #35155D;
-$lightPurple: #512B81;
-$darkBlue: #4477CE;
-$lightBlue: #8CABFF;
+// Variables
+$dark-purple: #35155D;
+$light-purple: #512B81;
+$dark-blue: #4477CE;
+$light-blue: #8CABFF;
+$background: #1A0B2E;
+$text-primary: #FFFFFF;
+$text-secondary: rgba(255, 255, 255, 0.7);
+$accent: #8CABFF;
 
-.boxInicial{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: $darkPurple;
-    height: 90vh;
-    background: linear-gradient(to bottom, $lightPurple, #310f5a);
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('../../../assets/htmlSimbol.png');
-        background-size: cover;
-        background-position: center;
-        opacity: 0.2;
-        z-index: 0;
-    }
-
-    h1, h4, .wrapper {
-        position: relative;
-        z-index: 1;
-    }
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.boxInicial .title{
-    font-family: 'Phudu', cursive;
-    font-weight: 700;
-    letter-spacing: 0.09cm;
-    color: white;
-    font-size: 70px;
-    margin: 0;
-    padding: 0;
-   
-}
-
-.infoInicio{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.divImg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-}
-
-
-.msgInicio {
-  color: white;
-  font-family: 'Phudu', cursive;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  font-size: 20px;
-  
-  /* Adicione estas propriedades para centralização */
+@mixin flex-column-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Para alinhar o texto no centro horizontal */
-  height: 100%; /* Preenche a altura da div */
 }
 
-.wrapper{
-    display: flex;
-    justify-content: center;
-}
-
-.simbol{
-  height: 500px;
-}
-
-a{
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-  }
+// Base styles
+.boxInicial {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
+  color: $text-primary;
+  font-family: 'Space Grotesk', sans-serif;
+  overflow: hidden;
   
-  a span{
-    position: relative;
-    z-index: 2;
+  // Remove default margins and paddings
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
+}
+
+// Background elements
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
   
-  a:after{
+  .gradient-sphere {
     position: absolute;
-    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 60vw;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba($light-blue, 0.1) 0%, rgba($dark-purple, 0.05) 50%, transparent 70%);
+    filter: blur(40px);
+    opacity: 0.6;
+    animation: float 20s infinite alternate ease-in-out;
+  }
+  
+  .grid {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 0;
-    height: 100%;
-    background: $darkBlue;
-    transition: all .35s;
-  }
-  
-  a:hover{
-    color: #fff;
-  }
-  
-  a:hover:after{
     width: 100%;
-  }
-// Media Queries para Responsividade
-@media ( max-width: 1024px){
-  .boxInicial .title{
-    font-size: 45px; // Tamanho da fonte menor em telas menores
-  }
-  
-  .msgInicio{
-    font-size: 18px; // Ajuste no tamanho da mensagem
-  }
-  
-  a{
-    width: 150px; // Botão menor em telas pequenas
-    font-size: 16px; // Tamanho da fonte do botão ajustado
+    height: 100%;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.4;
   }
 }
 
-@media (max-width: 768px) {
-  .boxInicial .title {
-      font-size: 35px; // Tamanho da fonte menor em telas menores
-  }
+// Particles canvas
+.particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+// Main content container
+.content-container {
+  position: relative;
+  z-index: 2;
+  @include flex-column-center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
   
-  .msgInicio {
-      font-size: 18px; // Ajuste no tamanho da mensagem
-  }
-  
-  a {
-      width: 150px; // Botão menor em telas pequenas
-      font-size: 16px; // Tamanho da fonte do botão ajustado
+  // Fixed width container for better alignment
+  > * {
+    width: 100%;
+    max-width: 800px;
   }
 }
 
-@media (max-width: 480px) {
-  .boxInicial .title {
-      font-size: 24px; // Tamanho da fonte aumentado
-      letter-spacing: 0px; // Tamanho da fonte aumentado
-      word-wrap: break-all; // Quebra a linha do título
+// Header section
+.header-section {
+  @include flex-column-center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 5vh;
+}
+
+// Title styling
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 2vh;
+  width: 100%;
+  text-align: center;
+  
+  .title-line {
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+    
+    &:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    
+    &:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+    }
   }
   
-  .msgInicio {
-      font-size: 16px; // Texto ainda menor
+  .accent {
+    color: $accent;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $accent;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.6s ease;
+    }
+    
+    &:hover::after {
+      transform: scaleX(1);
+    }
   }
+}
 
-  .simbol {
-      height: 300px; // Ajuste na altura da imagem
+// Separator
+.separator {
+  width: 40px;
+  height: 1px;
+  background-color: $accent;
+  margin: 3vh auto;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: scaleIn 0.8s 0.8s forwards;
+}
+
+// Description text
+.description {
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-weight: 300;
+  color: $text-secondary;
+  max-width: 600px;
+  line-height: 5;
+  opacity: 0;
+  animation: fadeIn 0.8s 1s forwards;
+  text-align: center;
+  ;
+}
+
+// Skills section
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 3vh 0;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 0.8s 1.2s forwards;
+  justify-content: center;
+}
+
+.skill-container {
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: calc(var(--delay, 0s));
+}
+
+.skill-tag {
+  padding: 6px 12px;
+  border: 1px solid rgba($light-blue, 0.3);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: $accent;
+  background-color: rgba($light-blue, 0.05);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  
+  &:hover {
+    background-color: rgba($light-blue, 0.1);
+    transform: translateY(-2px);
   }
+}
 
-  a {
-      width: 100%; // Botão ocupa toda a largura disponível
-      height: 50px; // Ajuste na altura do botão
+// CTA section
+.cta-section {
+  margin-top: 5vh;
+  opacity: 0;
+  animation: fadeIn 0.8s 1.4s forwards;
+  width: 100%;
+  text-align: center;
+}
+
+.cta-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  color: $text-primary;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: 1px solid rgba($light-blue, 0.3);
+  border-radius: 30px;
+  background-color: rgba($light-blue, 0.1);
+  
+  &:hover {
+    color: $accent;
+    background-color: rgba($light-blue, 0.15);
+    transform: translateY(-2px);
+    
+    .cta-icon {
+      transform: translateY(2px);
+    }
+  }
+  
+  .cta-text {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cta-icon {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+}
+.icons {
+  height: 100px;
+  transition: transform 0.5s;
+}
+
+
+// Scroll indicator
+.scroll-indicator {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  @include flex-column-center;
+  gap: 8px;
+  opacity: 0;
+  animation: fadeIn 0.8s 1.6s forwards;
+  z-index: 2;
+  
+  .line {
+    width: 1px;
+    height: 40px;
+    background-color: rgba($text-primary, 0.2);
+    position: relative;
+    overflow: hidden;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $accent;
+      animation: scrollDown 2s infinite;
+    }
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $accent;
+  }
+}
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px); // Move para baixo
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); // Volta à posição original
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.animated {
-    animation: fadeIn 1s ease-in-out; // Aplica a animação
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
 }
 
-.wrapper a {
-    transition: transform 0.3s; // Adiciona transição ao botão
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }
 
-.wrapper a:hover {
-    transform: scale(1.05); // Aumenta o botão ao passar o mouse
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-52%, -48%);
+  }
+  100% {
+    transform: translate(-48%, -52%);
+  }
 }
 
+// Media queries
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0 15px;
+  }
+  
+  .title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  
+  .skills-section {
+    padding: 0 10px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+  
+  .skill-tag {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
